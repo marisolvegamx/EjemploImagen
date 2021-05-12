@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<syn-adpater xmlns:android="http://schemas.android.com/apk/res/android"
+android:accountType="@string/account_type"
+
+android:contentAuthority="@string/provider_auth"
+    android:userVisible="false"
+    android:supportsUploading="false"
+    android:allowParallelSyncs="false"
+    android:isAlwaysSyncable="true" />
+

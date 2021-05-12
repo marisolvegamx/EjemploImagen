@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Compras móvil</string>
+   <string name="error">Hubo un error intente de nuevo</string>
+    <string name="reporte_guardado"> El reporte se guardó correctamente</string>
+    <string name="action_sync">Sincronizar</string>
+    <string name="action_settings">Settings</string>
+    <string name="account_type">com.example.ejemploimagen.account</string>
+    <string name="provider_auth">com.example.ejemploimagen.miprovider</string>
+    <string name="action_ubicacion">Ubicación</string>
+    <string name="title_activity_child">Lista imagenes</string>
+
+</resources>

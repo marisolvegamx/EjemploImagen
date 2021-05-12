@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "011b2ba7de9d9113fbc2dc4244d53e01",
+    "entities": [
+      {
+        "tableName": "imagenes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id_idimagen` INTEGER NOT NULL, `id_reporte` INTEGER NOT NULL, `id_ruta` TEXT NOT NULL, `id_descripcion` TEXT, `estatus` INTEGER NOT NULL, PRIMARY KEY(`id_idimagen`))",
+        "fields": [
+          {
+            "fieldPath": "id_idimagen",
+            "columnName": "id_idimagen",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_reporte",
+            "columnName": "id_reporte",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_ruta",
+            "columnName": "id_ruta",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id_descripcion",
+            "columnName": "id_descripcion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "estatus",
+            "columnName": "estatus",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id_idimagen"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '011b2ba7de9d9113fbc2dc4244d53e01')"
+    ]
+  }
+}
